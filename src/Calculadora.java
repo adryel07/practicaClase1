@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Ahorcado {
     public static void main(String[] args) {
         Integer a;
-        Integer b;
+        Integer b = 0;
         Integer opcion;
         Integer resultado;
         do{
@@ -14,11 +14,11 @@ public class Ahorcado {
         a = teclado.next();
         System.out.println("Ingrese el segundo numero");
         a = teclado.next();
-        if(opcion.equals(1)){
+        if(opcion.equals(2)){
             resultado = a + b;
-        }else if(opcion.equals(2)){
-            resultado = a - b;
         }else if(opcion.equals(3)){
+            resultado = a - b;
+        }else if(opcion.equals(1)){
             resultado = a * b;
         }else{
             resultado = a / b;
